@@ -1,4 +1,7 @@
-/* GENERAL STYLES */
+body {
+    background-color: #FFF8E1;
+    font-family: Arial, sans-serif;
+    padding-bottom: 2500px;/* GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
