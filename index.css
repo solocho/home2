@@ -926,3 +926,275 @@ html, body {
         font-size: 18px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ff4081; /* Vibrant pink, change as needed */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff4081, #ff7300); /* Gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s infinite alternate;
+    font-style: italic;
+    
+      
+      
+}
+
+/* Glowing Effect */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 64, 129, 0.8), 0 0 20px rgba(255, 115, 0, 0.6);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 64, 129, 1), 0 0 30px rgba(255, 115, 0, 1);
+    }
+}
+
+/* Underline Hover Effect */
+.text h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 4px;
+    background: #ff7300;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.text h2:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Subtle Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.shop-btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+
+.shop-btn:hover {
+    background: #e7356a;
+}
+
+/* NAVIGATION BUTTONS */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* DOTS */
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #ff4081;
+}
+ .motto{font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ff4081; /* Vibrant pink */
+    background: linear-gradient(90deg, #ff4081, #ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 20px;
+    position: relative;
+    
+    animation: fadeIn 1s ease-in-out, glow 1.5s infinite alternate;
+    display: block; /* Ensures it takes full width */
+    text-align: center; /* Keeps it centered */
+    margin-bottom: 20px; /* Adds space below */
+}
+
+/* Glowing Effect */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 64, 129, 0.7), 0 0 10px rgba(255, 115, 0, 0.5);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(255, 64, 129, 1), 0 0 20px rgba(255, 115, 0, 1);
+    }
+}
+
+/* Underline Effect */
+.motto::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 4px;
+    background: #ff7300;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.motto:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu-cons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Each section (Ship, Transaction, Support) */
+.ship, .transaction, .support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Images */
+.menu-cons img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-cons img:hover {
+    transform: scale(1.1);
+}
+
+/* First Text (Main Heading) */
+.first {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Second Text (Subheading) */
+.second {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Gradient Text Effect */
+.first, .second {
+    background: linear-gradient(90deg, #ff4081, #ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-cons {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+}
+/* First Text (Main Heading) */
+.first {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
