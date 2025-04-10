@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BettSiddy Collections</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Simulating a logged-in user
+        const userName = "John Doe"; // Replace with actual logged-in user data
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("user-name").textContent = userName;
+        });
+    </script>
+</head>
+<body>
+    <div class="bighead">
+        <div class="header">
+            <div class="right">
+                <div>
+                    <img class="logo" src="logo.png" alt="Logo">
+                </div>
+                <div>
+                    <p class="logo-n">BettSiddy Collection</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <input class="search" type="text" placeholder="Search">
+                <div class="search-icon-con">
+                    <img class="search-icon" src="search.svg" alt="Search">
+                </div>
+
+                <!-- Category Dropdown -->
+                <div class="dropdown">
+                    <input class="category" type="text" placeholder="Category">
+                    <ul class="dropdown-menu">
+                        <li>Bags</li>
+                        <li>Jumpers</li>
+                        <li>jewellery</li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+            <div class="left">
+                <div class="hello">
+                    <p>Hello, <span id="user-name">Guest</span> |</p>
+                </div>
+
+                <div class="li-ca">
+                    <div class="like-con">
+                        <img class="like" src="like.svg" alt="Like">
+                    </div>
+                    <div class="cart-con">
+                        <img class="cart" src="cart.svg" alt="Cart">
+                    </div>
+                </div>
+
+                <!-- Currency Dropdown -->
+                <div class="currency-dropdown">
+                    <input class="currency" type="text" placeholder="KSH">
+                    <ul class="currency-menu">
+                        <li>USD - US Dollar</li>
+                        <li>EUR - Euro</li>
+                       
+                        <li>KES - Kenyan Shilling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="selling/bag.png">
+                <div class="overlay"></div>
+                <div class="text">
+                    <h2>Bettsiddy Bags Collection</h2>
+                    <p class="motto">Luxury Handbags - Largest Range Available</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="selling/hoodie.png">
+                <div class="overlay"></div>
+                <div class="text">
+                    <h2>BettSiddy Hoodies Collection</h2>
+                    <p class="motto">Stylish and Comfortable Hoodies</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="selling/sneaker.png">
+                <div class="overlay"></div>
+                <div class="text">
+                    <h2>Bettsiddy Elegant Jewelry Collection</h2>
+<p class="motto">Timeless Beauty, Crafted to Perfection</p>
+
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Arrows -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    
+        <!-- Dots for Manual Navigation -->
+        <div class="dots-container">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+
+    <div class="menu-cons">
+        <div class="ship">
+            <div><img src="menu-con/shipping.png"></div>
+            <div><p class="first">Track Order</p></div>
+            <div><p class="second">24/7 Delivery</p></div>
+        </div>
+        <div class="transaction">
+            <div><img src="menu-con/transaction.png"></div>
+            <div><p class="first">Transactions</p></div>
+            <div></div>
+        </div>
+        <div class="support">
+            <div><img src="menu-con/call.png"></div>
+            <div class="first">24 HRS support </div>
+            <div class="second">contact our support team</div>
+        </div>
+    </div>
+    
+   
+    <div class="body-2">
+        <div class="b-2-l">
+            <!-- Hoodie Slider -->
+            <div class="b-2-l-u">
+                <div class="b-2-l-u-container">
+                    <div class="b-2-l-u-slide">
+                        <img src="hoodie/h1.png" alt="Hoodie 1">
+                        <div class="overlay">
+                            <h2>Premium Hoodie</h2>
+                            <p>Soft & Stylish</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-u-slide">
+                        <img src="hoodie/h2.png" alt="Hoodie 2">
+                        <div class="overlay">
+                            <h2>Winter Comfort</h2>
+                            <p>Cozy & Warm</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-u-slide">
+                        <img src="hoodie/h3.png" alt="Hoodie 3">
+                        <div class="overlay">
+                            <h2>Casual Look</h2>
+                            <p>Everyday Wear</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-u-slide">
+                        <img src="hoodie/h4.png" alt="Hoodie 4">
+                        <div class="overlay">
+                            <h2>Modern Style</h2>
+                            <p>Trendsetter</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-u-slide">
+                        <img src="hoodie/h1.png" alt="Hoodie 5">
+                        <div class="overlay">
+                            <h2>Urban Hoodie</h2>
+                            <p>Streetwear Classic</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="b-2-l-u-prev">&#10094;</button>
+                <button class="b-2-l-u-next">&#10095;</button>
+                <div class="b-2-l-u-dots"></div>
+            </div>
+    
+            <!-- Jewelry Slider -->
+            <div class="b-2-l-l">
+                <div class="b-2-l-l-container">
+                    <div class="b-2-l-l-slide">
+                        <img src="jewels/j1.png" alt="Jewelry 1">
+                        <div class="overlay">
+                            <h2>Elegant Necklace</h2>
+                            <p>Timeless Beauty</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-l-slide">
+                        <img src="jewels/j2.png" alt="Jewelry 2">
+                        <div class="overlay">
+                            <h2>Luxury Bracelet</h2>
+                            <p>Pure Gold</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-l-slide">
+                        <img src="jewels/j3.png" alt="Jewelry 3">
+                        <div class="overlay">
+                            <h2>Diamond Ring</h2>
+                            <p>Forever Shine</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-l-slide">
+                        <img src="jewels/j4.png" alt="Jewelry 4">
+                        <div class="overlay">
+                            <h2>Stylish Earrings</h2>
+                            <p>Perfect Sparkle</p>
+                        </div>
+                    </div>
+                    <div class="b-2-l-l-slide">
+                        <img src="jewels/j5.png" alt="Jewelry 5">
+                        <div class="overlay">
+                            <h2>Royal Pendant</h2>
+                            <p>Grace & Elegance</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="b-2-l-l-prev">&#10094;</button>
+                <button class="b-2-l-l-next">&#10095;</button>
+                <div class="b-2-l-l-dots"></div>
+            </div>
+        </div>
+    
+        <!-- Bag Slider -->
+        <div class="b-2-r">
+            <div class="b-2-r-container">
+                <div class="b-2-r-slide">
+                    <img src="bags/b1.png" alt="Bag 1">
+                    <div class="overlay">
+                        <h2>Leather Backpack</h2>
+                        <p>Premium Quality</p>
+                    </div>
+                </div>
+                <div class="b-2-r-slide">
+                    <img src="bags/b2.png" alt="Bag 2">
+                    <div class="overlay">
+                        <h2>Fashion Tote</h2>
+                        <p>Elegant & Chic</p>
+                    </div>
+                </div>
+                <div class="b-2-r-slide">
+                    <img src="bags/b1.png" alt="Bag 3">
+                    <div class="overlay">
+                        <h2>Modern Satchel</h2>
+                        <p>Everyday Essential</p>
+                    </div>
+                </div>
+                <div class="b-2-r-slide">
+                    <img src="bags/b1.png" alt="Bag 4">
+                    <div class="overlay">
+                        <h2>Classic Handbag</h2>
+                        <p>Stylish & Trendy</p>
+                    </div>
+                </div>
+                <div class="b-2-r-slide">
+                    <img src="bags/b2.png" alt="Bag 5">
+                    <div class="overlay">
+                        <h2>Travel Duffle</h2>
+                        <p>Spacious & Durable</p>
+                    </div>
+                </div>
+            </div>
+            <button class="b-2-r-prev">&#10094;</button>
+            <button class="b-2-r-next">&#10095;</button>
+            <div class="b-2-r-dots"></div>
+        </div>
+    </div>
+    
+
+    <div class="body-3">
+        <div class="b-3-u"><p>FEATURED PRODUCTS</p></div>
+    
+        <!-- Navigation Tabs -->
+        <div class="b-3-l">
+            <p class="tab active" data-category="featured">FEATURED</p>
+            <p class="tab" data-category="latest">LATEST</p>
+            <p class="tab" data-category="special">SPECIAL</p>
+        </div>
+    
+        <!-- Image Container -->
+        <div class="b-3-images">
+            <div class="image-container" id="featured">
+                <div class="image-box">
+                    <img src="hoodie/h1.png">
+                    <h2>Premium Hoodie</h2>
+                    <p class="price">KES49.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="hoodie/h2.png">
+                    <h2>Winter Comfort</h2>
+                    <p class="price">KES59.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="hoodie/h3.png">
+                    <h2>Casual Look</h2>
+                    <p class="price">$44.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="hoodie/h4.png">
+                    <h2>Modern Style</h2>
+                    <p class="price">KES64.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="hoodie/h1.png">
+                    <h2>Urban Hoodie</h2>
+                    <p class="price">KES54.99</p>
+                </div>
+            </div>
+    
+            <div class="image-container" id="latest">
+                <div class="image-box">
+                    <img src="bags/b1.png">
+                    <h2>Leather Backpack</h2>
+                    <p class="price">KES79.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="bags/b2.png">
+                    <h2>Fashion Tote</h2>
+                    <p class="price">KES69.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="bags/b1.png">
+                    <h2>Modern Satchel</h2>
+                    <p class="price">KES59.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="bags/b2.png">
+                    <h2>Classic Handbag</h2>
+                    <p class="price">KES89.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="bags/b1.png">
+                    <h2>Travel Duffle</h2>
+                    <p class="price">KES99.99</p>
+                </div>
+            </div>
+    
+            <div class="image-container" id="special">
+                <div class="image-box">
+                    <img src="jewels/j1.png">
+                    <h2>Elegant Necklace</h2>
+                    <p class="price">KES129.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="jewels/j2.png">
+                    <h2>Luxury Bracelet</h2>
+                    <p class="price">KES199.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="jewels/j3.png">
+                    <h2>Diamond Ring</h2>
+                    <p class="price">KES499.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="jewels/j4.png">
+                    <h2>Stylish Earrings</h2>
+                    <p class="price">KES149.99</p>
+                </div>
+                <div class="image-box">
+                    <img src="jewels/j5.png">
+                    <h2>Royal Pendant</h2>
+                    <p class="price">KES179.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="body-4">
+        <div class="b-4-l">
+            <p class="news">NEWSLETTER</p>
+            <p class="n-m">SIGN UP TO OUR NEWSLETTER AND SAVE</p>
+            <p class="n-m-m">20% OFF FOR YOUR NEXT PURCHASE</p>
+        </div>
+        <div class="b-4-r">
+            <input class="email" type="email" placeholder="Enter your email">
+            <button class="subscribe-btn">SUBSCRIBE</button>
+            
+            
+        </div>
+    </div>
+    
+
+    <div class="body-5">
+        <!-- Footer Headings -->
+        <div class="b-5-f">
+            <p class="c">Company</p>
+            <p class="q">Questions</p>
+            <p class="l">Useful Links</p>
+            <p class="co">Connect with Us</p>
+        </div>
+    
+        <!-- Footer Links -->
+        <div class="b-5-s">
+            <div class="company">
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div class="questions">
+                <p><a href="#">Help & Support</a></p>
+                <p><a href="#">Track Order</a></p>
+                <p><a href="#">Return Policy</a></p>
+                <p><a href="#">Shipping Info</a></p>
+                <p><a href="#">Order History</a></p>
+            </div>
+            <div class="links">
+                <p><a href="#">Gift Cards</a></p>
+                <p><a href="#">Size Chart</a></p>
+                <p><a href="#">My Account</a></p>
+                <p><a href="#">Our Location</a></p>
+                <p><a href="#">FAQs</a></p>
+            </div>
+            <!-- Social Media -->
+            <div class="connect">
+                <a href="#"><img src="icons/insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="icons/face.png" alt="Facebook"></a>
+                <a href="mailto:example@email.com"><img src="icons/mail.jpg" alt="Email"></a>
+                <a href="tel:+123456789"><img src="icons/call.png" alt="Contact"></a>
+            </div>
+        </div>
+    
+        <!-- Payment Methods -->
+        <div class="b-5-t">
+            <img src="icons/paypal.png" alt="PayPal">
+            <img src="icons/amaon.png" alt="Amazon Pay">
+            <img src="icons/visa.png" alt="Visa">
+            <img src="icons/master.jpg" alt="MasterCard">
+            <img src="icons/gpay.jpg" alt="Stripe">
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="b-5-fo">
+            <p>Bettsiddy collections © 2025 | All Rights Reserved</p>
+        </div>
+    </div>
+    
+    
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
